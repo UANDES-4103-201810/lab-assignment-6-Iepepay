@@ -1412,3 +1412,130 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-17 20:56:07 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 3553ms (Views: 3531.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 20:56:15 -0300
+  
+SyntaxError (/home/inaki/Desktop/lab-assignment-6-Iepepay/app/controllers/registrations_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+        	notice: 'User was successfully created.'
+        	       ^
+/home/inaki/Desktop/lab-assignment-6-Iepepay/app/controllers/registrations_controller.rb:15: syntax error, unexpected ':', expecting keyword_end
+		notice: 'No'
+		       ^):
+  
+app/controllers/registrations_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+app/controllers/registrations_controller.rb:15: syntax error, unexpected ':', expecting keyword_end
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 20:57:55 -0300
+Processing by RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (uninitialized constant RegistrationsController::Registrations):
+  
+app/controllers/registrations_controller.rb:4:in `new'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 20:58:14 -0300
+Processing by RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NameError (uninitialized constant RegistrationsController::Registrations):
+  
+app/controllers/registrations_controller.rb:4:in `new'
+Started GET "/" for 127.0.0.1 at 2018-04-17 23:31:35 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 535ms (Views: 510.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 23:31:39 -0300
+Processing by RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RegistrationsController::Registrations):
+  
+app/controllers/registrations_controller.rb:4:in `new'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 23:32:20 -0300
+Processing by RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant RegistrationsController::Registrations):
+  
+app/controllers/registrations_controller.rb:4:in `new'
+Started GET "/" for 127.0.0.1 at 2018-04-17 23:32:24 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 136ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-17 23:32:29 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7kg9dPtUp/pY5vh5br4z2uqro85G1JAD4+69SBjzEopy9vXNkdolToXdmvdesw3ia0R9rw0msdibPE66OHxfWw==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 46ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 23:33:34 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 147ms (Views: 144.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 23:33:37 -0300
+Processing by RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NameError (uninitialized constant RegistrationsController::Registrations):
+  
+app/controllers/registrations_controller.rb:4:in `new'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 23:34:06 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 109ms (Views: 105.9ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 23:34:08 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NirLaCXOOydFFnTBNiH466UE3vWF8YPwD/RtnCvnWC2qlAPRT0C5k5gtFk8GLMbTJOsAlM4Doit3Jp5uC2gV/A==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:10:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 23:34:45 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 75ms (Views: 71.1ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 23:34:48 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RWFnvfLCSDylt8RLWpASpcN1jfpPnsjwPXhCLSMmLwTZ368EmEzKiHiMpsVqnSydQppTmwRs6StFqrHfA6li1Q==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/registrations_controller.rb:10:in `create'

@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-	#complete this method
+	logged_in = true
+      
   end
 
   def is_user_logged_in?
